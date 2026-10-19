@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça o Resulty Automacao do Drive, aplicativo privado para organização autorizada de documentos financeiros no Google Drive.">
+  <title>Resulty Automacao do Drive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Resulty Automacao do Drive — início">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span><span class="brand-name">Resulty Automacao do Drive</span><span class="brand-subtitle">Informações sobre o aplicativo privado</span></span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="index.html" aria-current="page">Apresentação</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos de uso</a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo" class="wrap">
+    <p class="eyebrow">Uso autorizado pela Resulty</p>
+    <h1>Organização de documentos financeiros no Google Drive.</h1>
+    <p class="lead">O Resulty Automacao do Drive é um aplicativo privado para organizar PDFs em uma pasta definida pela empresa. Ele auxilia a equipe a classificar documentos, padronizar nomes e separar lotes de comprovantes.</p>
+    <p class="status">Fase atual: configuração e testes locais. Produção ainda não ativada.</p>
+    <div class="overview">
+      <section class="panel" aria-labelledby="funcionamento">
+        <h2 id="funcionamento">Como funciona</h2>
+        <ol class="steps">
+          <li><strong>A empresa define o acesso.</strong>Uma conta Google dedicada recebe acesso à pasta de trabalho. A conexão é autorizada pelo Google OAuth.</li>
+          <li><strong>O aplicativo analisa os PDFs.</strong>Regras de leitura identificam boletos, extratos e comprovantes a partir do texto e dos nomes dos arquivos. Documentos ambíguos são encaminhados para revisão.</li>
+          <li><strong>A equipe acompanha a organização.</strong>É possível simular os destinos antes de executar. O aplicativo cria pastas, move e renomeia documentos e pode gerar PDFs individuais de lotes identificados, preservando o arquivo original do lote.</li>
+        </ol>
+      </section>
+      <section class="panel panel-soft" aria-labelledby="limites">
+        <h2 id="limites">Controle da empresa</h2>
+        <p>A automação foi implementada para atuar na árvore da pasta configurada. A permissão OAuth do Drive é ampla e pode alcançar outros arquivos acessíveis pela conta autorizada; por isso, a conta dedicada deve receber apenas os acessos necessários.</p>
+        <p>A aplicação não realiza pagamentos. A equipe continua responsável pela conferência dos documentos e pela confirmação explícita de pagamentos quando solicitada.</p>
+        <p>A leitura dos PDFs usa a biblioteca pypdf e regras de extração. O fluxo atual não envia documentos a modelos de inteligência artificial.</p>
+      </section>
+    </div>
+    <div class="link-grid" aria-label="Documentos de referência">
+      <a class="document-link" href="privacidade.html"><strong>Política de privacidade →</strong><span>Dados acessados, finalidade, armazenamento e controle da autorização.</span></a>
+      <a class="document-link" href="termos.html"><strong>Termos de uso →</strong><span>Acesso autorizado, revisão dos resultados e responsabilidades operacionais.</span></a>
+    </div>
+    <section class="contact" aria-labelledby="contato">
+      <h2 id="contato">Contato</h2>
+      <p>Para dúvidas sobre a automação ou solicitações relacionadas aos dados, entre em contato pelo e-mail <a href="mailto:automacaoresulty@gmail.com">automacaoresulty@gmail.com</a>.</p>
+      <p class="meta">Responsável pela aplicação: Resulty. Última atualização: <time datetime="2026-10-19">19 de outubro de 2026</time>.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner"><p>Resulty Automacao do Drive · aplicativo privado</p><div class="footer-links"><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos de uso</a><a href="mailto:automacaoresulty@gmail.com">Contato</a></div></div>
+  </footer>
+</body>
+</html>

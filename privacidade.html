@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dados acessados, finalidade, armazenamento e controle da autorização do aplicativo privado Resulty Automacao do Drive.">
+  <title>Privacidade — Resulty Automacao do Drive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Resulty Automacao do Drive — início"><span class="brand-mark" aria-hidden="true">R</span><span><span class="brand-name">Resulty Automacao do Drive</span><span class="brand-subtitle">Informações sobre o aplicativo privado</span></span></a>
+      <nav aria-label="Navegação principal"><a href="index.html">Apresentação</a><a href="privacidade.html" aria-current="page">Privacidade</a><a href="termos.html">Termos de uso</a></nav>
+    </div>
+  </header>
+  <main id="conteudo" class="wrap">
+    <p class="eyebrow">Transparência sobre os dados</p>
+    <h1>Política de privacidade</h1>
+    <p class="lead">Como o aplicativo privado Resulty Automacao do Drive acessa e utiliza dados para organizar documentos financeiros por autorização da Resulty.</p>
+    <p class="meta">Última atualização: <time datetime="2026-10-19">19 de outubro de 2026</time>.</p>
+    <div class="document-layout">
+      <aside class="contents" aria-label="Conteúdo desta política">
+        <strong>Nesta página</strong>
+        <a href="#aplicacao">1. Aplicação e contato</a><a href="#dados">2. Dados acessados</a><a href="#finalidades">3. Uso dos dados</a><a href="#permissoes">4. Permissão do Drive</a><a href="#armazenamento">5. Processamento e armazenamento</a><a href="#compartilhamento">6. Acesso e compartilhamento</a><a href="#controle">7. Retenção e controle</a><a href="#google">8. Uso limitado do Google</a><a href="#paginas">9. Estas páginas</a><a href="#alteracoes">10. Alterações nesta política</a>
+      </aside>
+      <article class="document-body" aria-label="Política de privacidade">
+        <section id="aplicacao">
+          <h2>1. Aplicação e contato</h2>
+          <p>O Resulty Automacao do Drive é uma automação privada destinada à organização de documentos financeiros em uma pasta do Google Drive definida pela Resulty. O acesso é reservado às pessoas autorizadas pela empresa.</p>
+          <p>A responsável pela aplicação é a Resulty. O contato operacional para dúvidas e solicitações relacionadas aos dados é <a href="mailto:automacaoresulty@gmail.com">automacaoresulty@gmail.com</a>.</p>
+        </section>
+        <section id="dados">
+          <h2>2. Dados acessados</h2>
+          <p>A aplicação pode acessar os seguintes dados quando necessários para executar as funções autorizadas:</p>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th scope="col">Categoria</th><th scope="col">Exemplos e finalidade</th></tr></thead>
+              <tbody>
+                <tr><td>Arquivos e pastas</td><td>Nomes, identificadores, localização na árvore de pastas, tipo, tamanho, versão e propriedades dos documentos, para localizar e organizar o material.</td></tr>
+                <tr><td>Conteúdo dos PDFs</td><td>Texto e páginas de boletos, extratos e comprovantes. O conteúdo pode incluir nomes de pessoas e empresas, dados bancários, identificadores fiscais, valores e datas presentes nos próprios documentos.</td></tr>
+                <tr><td>Dados extraídos ou revisados</td><td>Tipo do documento, fornecedor ou beneficiário, valor, data do documento, data de agendamento e confirmação de pagamento, para classificação e padronização.</td></tr>
+                <tr><td>Registros da organização</td><td>Etapa de processamento, referências ao arquivo de origem, intervalos de páginas, verificações de conteúdo e progresso de lotes, para permitir conferência e reduzir duplicações.</td></tr>
+                <tr><td>Credenciais de autorização</td><td>Credenciais OAuth, incluindo tokens de acesso e renovação, para a aplicação se conectar ao Google sem receber a senha da conta.</td></tr>
+                <tr><td>Dados operacionais</td><td>Identificadores de execução, totais de documentos, indicação de simulação, estado de execução e tipos de erro, para operação e diagnóstico.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section id="finalidades">
+          <h2>3. Uso dos dados</h2>
+          <p>Os dados são usados para localizar documentos na pasta configurada, interpretar PDFs, apresentar simulações e pendências à equipe, criar pastas, renomear e mover arquivos, gravar metadados e, quando o lote é identificado de forma suficiente, gerar PDFs individuais preservando o original do lote.</p>
+          <p>A extração atual é feita com pypdf e regras de leitura, sem envio dos documentos a modelos de inteligência artificial. Não há uso dos dados para publicidade, venda de dados ou treinamento de modelos de inteligência artificial neste fluxo.</p>
+          <p>A aplicação não acessa a conta bancária nem efetua pagamentos. A classificação dos documentos e os registros de pagamento atendem à organização documental.</p>
+        </section>
+        <section id="permissoes">
+          <h2>4. Permissão do Google Drive</h2>
+          <p>A conexão usa autorização Google OAuth com permissão ampla do Drive. Essa permissão pode permitir acesso aos arquivos que a conta autorizada consegue acessar; o consentimento não fica tecnicamente restrito a uma única pasta.</p>
+          <p>O código foi implementado para procurar e alterar documentos dentro da árvore da pasta configurada, com verificações de pertencimento a essa árvore. A configuração prevista utiliza uma conta Google dedicada, à qual a empresa compartilha somente as pastas necessárias.</p>
+          <p>Antes da autorização, a pessoa responsável deve revisar a conta selecionada e a permissão apresentada pelo Google. O acesso pode ser revogado nas <a href="https://myaccount.google.com/connections">conexões de terceiros da Conta Google</a>.</p>
+        </section>
+        <section id="armazenamento">
+          <h2>5. Processamento e armazenamento</h2>
+          <p>O fluxo de leitura baixa os PDFs para a memória do processo que executa a aplicação. O texto extraído e os arquivos individuais gerados são processados temporariamente nessa memória; o fluxo atual não grava uma cópia permanente dos PDFs em uma base própria da aplicação.</p>
+          <p>Os documentos originais, os PDFs gerados e os metadados de organização permanecem no Google Drive. Isso inclui os campos confirmados pela equipe, a etapa do documento e as referências usadas para acompanhar a divisão de lotes. A conta que cria novos arquivos e as regras do Google determinam sua propriedade e o uso de armazenamento.</p>
+          <p>Separadamente, a aplicação mantém registros operacionais: eventos, identificadores de execução, totais, indicação de simulação e tipos de erro. Resultados apresentados à equipe podem incluir nomes e identificadores de arquivos, destinos e dados extraídos dos documentos. A coordenação das execuções utiliza identificadores e horários; esses registros não são um repositório de PDFs.</p>
+          <p>Na configuração e nos testes locais, a aplicação lê a credencial OAuth de um arquivo no ambiente de execução. A execução de produção em Google Cloud Run ainda está planejada, com guarda de credenciais em serviço de segredos e painel de acesso privado. Serviços de nuvem podem manter registros técnicos adicionais conforme a configuração adotada.</p>
+        </section>
+        <section id="compartilhamento">
+          <h2>6. Acesso e compartilhamento</h2>
+          <p>Os dados ficam disponíveis à equipe autorizada da Resulty e, conforme os acessos concedidos pela empresa, às pessoas responsáveis pela configuração e manutenção da automação. A equipe pode consultar documentos, resultados e pendências no Drive e no painel.</p>
+          <p>O Google recebe e processa dados para fornecer o Drive, a autorização OAuth e os serviços de nuvem que forem ativados. A utilização desses serviços segue também as condições aplicáveis do Google.</p>
+          <p>O fluxo atual não inclui envio dos documentos a serviços de publicidade, intermediários de venda de dados ou fornecedores de modelos de inteligência artificial.</p>
+        </section>
+        <section id="controle">
+          <h2>7. Retenção e controle pela empresa</h2>
+          <p>O aplicativo não estabelece exclusão automática ou prazo fixo de retenção dos documentos. Arquivos e metadados no Drive permanecem até que a empresa responsável os altere ou remova, de acordo com sua rotina e com as regras do Google Drive.</p>
+          <p>Para interromper novos acessos, a empresa pode suspender as execuções, revogar a autorização da aplicação na Conta Google e remover o compartilhamento da pasta com a conta dedicada. Revogar a autorização não apaga os arquivos ou metadados já existentes no Drive.</p>
+          <p>Solicitações sobre acesso, correção ou remoção de dados e sobre o encerramento da automação podem ser encaminhadas a <a href="mailto:automacaoresulty@gmail.com">automacaoresulty@gmail.com</a>. A equipe responsável verifica a autorização de quem solicita e identifica os dados envolvidos.</p>
+          <p>A Resulty controla a manutenção das credenciais e dos registros no ambiente de execução. A aplicação não estabelece uma rotina automática de eliminação desses dados. Ao encerrar a automação, a equipe deve avaliar a remoção das credenciais, dos registros e dos acessos técnicos, além da revogação da autorização Google.</p>
+        </section>
+        <section id="google">
+          <h2>8. Uso limitado dos dados das APIs do Google</h2>
+          <p>O uso e a transferência das informações recebidas das APIs do Google ficam limitados às funções de organização documental descritas nesta política e à operação autorizada da aplicação. Os dados não são vendidos, usados para publicidade ou enviados para treinamento de modelos de inteligência artificial.</p>
+          <p>As regras aplicáveis a esses dados estão na <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado (<span lang="en">Limited Use</span>).</p>
+        </section>
+        <section id="paginas">
+          <h2>9. Estas páginas informativas</h2>
+          <p>Estas páginas são estáticas e não incluem formulários de coleta, ferramentas de análise de audiência, publicidade, cookies próprios, fontes externas ou scripts de rastreamento.</p>
+          <p>A hospedagem das páginas informativas utiliza GitHub Pages, no endereço resulty-automacao.github.io, e é separada do ambiente que executa a automação. O site não recebe documentos do Drive nem credenciais Google da aplicação.</p>
+          <p>Segundo a <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages">documentação do GitHub Pages</a>, o provedor registra e armazena o endereço IP de visitantes para fins de segurança. Consulte também a <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Declaração de Privacidade do GitHub</a>.</p>
+        </section>
+        <section id="alteracoes">
+          <h2>10. Alterações nesta política</h2>
+          <p>Mudanças nos dados acessados, nas finalidades, nos fornecedores ou no funcionamento da aplicação podem exigir atualização desta política. A data indicada nesta página identifica sua última atualização.</p>
+          <p>Dúvidas sobre esta política podem ser encaminhadas ao contato operacional da Resulty: <a href="mailto:automacaoresulty@gmail.com">automacaoresulty@gmail.com</a>.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><p>Resulty Automacao do Drive · atualizado em 19 de outubro de 2026</p><div class="footer-links"><a href="index.html">Apresentação</a><a href="termos.html">Termos de uso</a><a href="mailto:automacaoresulty@gmail.com">Contato</a></div></div></footer>
+</body>
+</html>

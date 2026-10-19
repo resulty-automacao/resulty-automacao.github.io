@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Regras de acesso autorizado, operação e conferência dos documentos no aplicativo privado Resulty Automacao do Drive.">
+  <title>Termos de uso — Resulty Automacao do Drive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header"><div class="wrap header-inner"><a class="brand" href="index.html" aria-label="Resulty Automacao do Drive — início"><span class="brand-mark" aria-hidden="true">R</span><span><span class="brand-name">Resulty Automacao do Drive</span><span class="brand-subtitle">Informações sobre o aplicativo privado</span></span></a><nav aria-label="Navegação principal"><a href="index.html">Apresentação</a><a href="privacidade.html">Privacidade</a><a href="termos.html" aria-current="page">Termos de uso</a></nav></div></header>
+  <main id="conteudo" class="wrap">
+    <p class="eyebrow">Orientações de uso autorizado</p>
+    <h1>Termos de uso</h1>
+    <p class="lead">Regras para utilização privada da automação pela equipe autorizada da Resulty.</p>
+    <p class="meta">Última atualização: <time datetime="2026-10-19">19 de outubro de 2026</time>.</p>
+    <div class="document-layout">
+      <aside class="contents" aria-label="Conteúdo destes termos"><strong>Nesta página</strong><a href="#finalidade">1. Finalidade</a><a href="#acesso">2. Acesso autorizado</a><a href="#operacao">3. Operação dos documentos</a><a href="#revisao">4. Conferência pela equipe</a><a href="#pagamentos">5. Registros de pagamento</a><a href="#limites">6. Limites de funcionamento</a><a href="#encerramento">7. Suspensão e encerramento</a><a href="#dados">8. Dados e contato</a><a href="#versao">9. Atualizações</a></aside>
+      <article class="document-body" aria-label="Termos de uso">
+        <section id="finalidade">
+          <h2>1. Finalidade</h2>
+          <p>O Resulty Automacao do Drive auxilia a organização de documentos financeiros no Google Drive. O aplicativo pode analisar PDFs, criar pastas, padronizar nomes, mover documentos e separar lotes identificados de comprovantes, preservando o original do lote.</p>
+          <p>Seu uso é privado e depende da configuração de uma pasta de trabalho e da autorização da Resulty. Não há cadastro público de usuários nesta versão.</p>
+        </section>
+        <section id="acesso">
+          <h2>2. Acesso autorizado</h2>
+          <p>Somente pessoas autorizadas pela empresa devem configurar a aplicação, conceder acesso ao Google Drive ou executar ações no painel. Quem autoriza a conexão deve ter permissão para disponibilizar os documentos envolvidos à automação.</p>
+          <p>A configuração prevista utiliza uma conta Google dedicada à automação. A Resulty deve manter o controle da recuperação dessa conta e decidir quais pastas serão compartilhadas com ela. Antes do consentimento OAuth, a pessoa responsável deve conferir a conta selecionada e as permissões solicitadas.</p>
+          <p>A permissão OAuth do Drive é ampla. O código limita a operação à árvore da pasta configurada, mas a autorização Google não se restringe tecnicamente a essa pasta. Mudanças de conta, pasta ou compartilhamento devem ser revisadas pela equipe responsável.</p>
+        </section>
+        <section id="operacao">
+          <h2>3. Operação dos documentos</h2>
+          <p>A equipe deve disponibilizar apenas documentos necessários e autorizados na pasta de entrada definida. O funcionamento depende de arquivos legíveis e de informações suficientes para identificar o tipo de documento e seus campos.</p>
+          <p>O modo de simulação apresenta as ações previstas sem aplicar alterações. Na execução efetiva, o aplicativo pode renomear e mover arquivos, criar pastas e gravar metadados. A divisão de lotes cria novos PDFs e arquiva o original do lote dentro da estrutura configurada.</p>
+          <p>Os novos arquivos podem pertencer à conta Google que os cria e consumir o armazenamento dessa conta. A equipe deve considerar essa característica ao definir os acessos e manter a conta dedicada sob controle da empresa.</p>
+        </section>
+        <section id="revisao">
+          <h2>4. Conferência pela equipe</h2>
+          <p>Durante a configuração inicial e após mudanças na rotina ou nos formatos dos documentos, a equipe deve simular a organização e conferir os destinos e as informações antes de ativar a execução automática. Na operação diária, deve acompanhar os resultados e atender às pendências de revisão.</p>
+          <p>Quando há dados incompletos, divergências, pastas duplicadas ou outras ambiguidades detectadas, a aplicação apresenta uma pendência de revisão. Uma pessoa autorizada deve conferir o original e corrigir ou confirmar os metadados antes de prosseguir.</p>
+          <p>Alterações manuais em arquivos durante o processamento podem exigir nova conferência. Se uma execução for interrompida, a equipe deve consultar o resultado e verificar os arquivos já processados antes de retomar.</p>
+        </section>
+        <section id="pagamentos">
+          <h2>5. Registros de pagamento</h2>
+          <p>A automação não efetua pagamentos e não valida movimentações diretamente no banco. O vencimento de um boleto ou a passagem do tempo não comprova a liquidação.</p>
+          <p>Comprovantes podem ser classificados a partir de indicações explícitas de pagamento efetivado em seu conteúdo. Quando a aplicação solicitar confirmação de pagamento, uma pessoa autorizada deverá conferi-lo na documentação e usar a ação explícita correspondente.</p>
+          <p>A organização de um documento em uma pasta ou a indicação de um estado no painel não substitui a conciliação, a conferência financeira ou os procedimentos da equipe.</p>
+        </section>
+        <section id="limites">
+          <h2>6. Limites de funcionamento</h2>
+          <p>A extração usa regras e a biblioteca pypdf. PDFs com texto insuficiente, protegidos, ambíguos ou incompatíveis com os limites do processamento podem exigir intervenção humana. O fluxo atual não realiza reconhecimento óptico de caracteres (OCR).</p>
+          <p>A execução depende da disponibilidade dos serviços do Google, de autorização válida, das permissões nas pastas, do espaço de armazenamento e da configuração do ambiente. Falhas podem interromper uma execução ou deixar parte das ações concluída.</p>
+          <p>A implantação de produção ainda está planejada. A empresa deverá validar o ambiente, os acessos, o acompanhamento das execuções e a rotina de recuperação antes de ativar o funcionamento automático.</p>
+        </section>
+        <section id="encerramento">
+          <h2>7. Suspensão e encerramento</h2>
+          <p>A Resulty pode suspender as execuções e revogar o acesso da aplicação nas <a href="https://myaccount.google.com/connections">conexões de terceiros da Conta Google</a>. Também pode remover o compartilhamento das pastas com a conta dedicada.</p>
+          <p>O encerramento não remove automaticamente documentos, PDFs gerados ou metadados existentes no Drive. A equipe responsável deverá revisar os arquivos, as credenciais, os acessos técnicos e os registros mantidos no ambiente.</p>
+        </section>
+        <section id="dados">
+          <h2>8. Dados e contato</h2>
+          <p>A responsável pela aplicação é a Resulty. O acesso e o uso dos dados estão descritos na <a href="privacidade.html">Política de privacidade</a>.</p>
+          <p>Para dúvidas, correções ou solicitações relacionadas à automação, use <a href="mailto:automacaoresulty@gmail.com">automacaoresulty@gmail.com</a>.</p>
+        </section>
+        <section id="versao">
+          <h2>9. Atualizações</h2>
+          <p>Estes termos podem ser atualizados quando houver mudanças no funcionamento ou na configuração da aplicação. A data indicada nesta página identifica sua última atualização.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><p>Resulty Automacao do Drive · atualizado em 19 de outubro de 2026</p><div class="footer-links"><a href="index.html">Apresentação</a><a href="privacidade.html">Privacidade</a><a href="mailto:automacaoresulty@gmail.com">Contato</a></div></div></footer>
+</body>
+</html>
